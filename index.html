@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+
+      background-image: url("./images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-color: hsl(225, 100%, 94%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+
+    }
+    .card {
+
+      max-width: 375px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 10px 10px rgba(9, 9, 220, .1);
+
+    }
+    .card .img-box {
+
+      height: 90%;
+      width: 100%;
+
+    }
+    .card .content {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0em 3em;
+
+    }
+    .content h2 { margin: 0em; margin-top: 1em; padding: 0em;}
+    .content p {text-align: center; color: grey; font-weight: 500;}
+    .item {
+
+      background-color: hsl(225, 100%, 98%);
+      padding: 1em 1.5em;
+      width: 90%;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .item .item-price {
+
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+
+    }
+    .item a { color: hsl(224, 23%, 55%); font-weight: 700;}
+    .item a:hover {text-decoration: none; color: hsl(245, 75%, 52%); opacity: .5;}
+    .pay-button {
+
+      border-radius: 8px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      width: 95%;
+      padding: .7em 1em;
+      margin: 2em 0em;
+      margin-bottom: 0em;
+      cursor: pointer;
+      box-shadow: 0px 15px 10px rgba(9, 9, 220, .1);
+
+    }
+    .pay-button:hover {opacity: .5;}
+    .cancel-btn {
+
+      margin-top: 1em;
+      margin-bottom: 2em;
+      cursor: pointer;
+      color: grey;
+      font-weight: 700;
+      text-decoration: none;
+
+    }
+    .cancel-btn:hover{color: hsl(223, 47%, 23%);}
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="img-box">
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+    <div class="content">
+      <h2>
+        Order Summary
+      </h2>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+      <div class="item">
+        <img src="./images/icon-music.svg" alt="">
+        <div class="item-price">
+          <strong>Annual Plan</strong>
+          $59.99/year
+        </div>
+        <a href="">
+          Change</a>
+      </div>
+      <a class="pay-button">Proceed to Payment</a>
+      <a href="" class="cancel-btn">Cancel Order</a> 
+      
+    </div>
+    
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ng Ka Wai</a>.
+  </div>
+</body>
+</html>
